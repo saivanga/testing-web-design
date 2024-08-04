@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <base href="https://sai.rocks/testing-web-design/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <base href="https://sai.rocks/testing-web-design/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website</title>
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Website</h1>
-    <h2>Links</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="audio.html">Audio</a></li>
-        <li><a href="video.html">Video</a></li>
-    </ul>
-    <div>
-      <h2>About</h2>
-      <p>About page</p>
+    <nav id="nav">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-menu">
+        <h2 id="nav-bar-title">Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="audio.html">Audio</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="content">
+      <h1>Website</h1>
+      <div>
+        <h2>About</h2>
+        <p>About page</p>
+      </div>
     </div>
+    <script src="menu.js"></script>
   </body>
 </html>

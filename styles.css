@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+  position: relative;
+  padding: 10px;
+}
+
+#content {
+  padding-left: 10px;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 24px;
+  background: #333333;
+  margin: 4px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu {
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 200px;
+  display: none;
+}
+
+.nav-menu h2 {
+  margin: 10px;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu li a {
+  display: block;
+  /* border-bottom: 1px solid #ccc; */
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+/* Hamburger icon when open */
+.hamburger.open span:first-child {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.hamburger.open span:nth-child(2) {
+  color: ;
+}
+
+.hamburger.open span:last-child {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Show the menu when the hamburger is open */
+.hamburger.open + .nav-menu {
+  display: block;
+}
+
+h1 {
+  margin: 20px 0;
+}
+p {
+  margin: 10px 0;
+  line-height: 1.4em;
+}
